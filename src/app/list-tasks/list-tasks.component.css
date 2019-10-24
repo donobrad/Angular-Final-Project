@@ -1,0 +1,14 @@
+* {
+    text-align: center;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 50px;
+}

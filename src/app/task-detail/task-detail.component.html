@@ -1,0 +1,31 @@
+<div>
+    <h1>Task: {{ task.name }}</h1>
+    <h3>Time Needed:</h3>
+    <p>{{ task.time_to_complete }}</p>
+    <h3>Description:</h3>
+    <p>{{ task.description }}</p>
+    <h3>Items Needed:</h3>
+    <p>{{ task.items_needed }}</p>
+    <button class="delete" title="delete task" (click)="delete(task)">Delete This Task</button>
+</div>
+<br>
+<div>
+    <div>
+        <label>Task Name:
+            <input type="text" placeholder="new name" [(ngModel)]="task.name" />
+        </label>
+    </div>
+    <div>
+        <label>Description: </label>
+        <input type="text" [(ngModel)]="task.description" placeholder="description" />
+    </div>
+    <div>
+        <label>Items Needed: </label>
+        <input type="text" [(ngModel)]="task.items_needed" placeholder="new items" />
+    </div>
+    <div>
+        <label>Time To Complete: </label>
+        <input type="text" [(ngModel)]="task.time_to_complete" placeholder="time to complete" />
+    </div>
+    <button (click)="update()">Update This Task</button>
+</div>
